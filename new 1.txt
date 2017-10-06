@@ -1,0 +1,2 @@
+Pour le premier programme : faire la fonction dans fonctions.cpp et appele dans le main 
+, il y aura une errreur et donc le commenter en indiquant qu'elle est inaccessible

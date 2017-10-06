@@ -1,0 +1,60 @@
+Complexe : 
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Complexe {
+    public :
+        double reel;
+        double im;
+
+	void addition(Complexe ,Complexe);
+	void soustraction(Complexe,Complexe);
+		
+		
+
+};
+
+
+
+void addition (Complexe a, Complexe b){
+    Complexe c;
+    c.reel = a.reel + b.reel;
+    c.im = a.im + a.im;
+
+    cout << c.reel << "+" << c.im << "i";
+}
+void soustraction (Complexe a, Complexe b){
+    Complexe c;
+    c.reel = a.reel - b.reel;
+    c.im = a.im - a.im;
+
+    cout << c.reel << "+" << c.im << "i";
+}
+
+
+
+int main()
+{
+
+    Complexe a, b;
+    cout << "Entrer a et b où a + ib est le premier complexe";
+    cout << "\n a = ";
+    cin >> a.reel;
+    cout << "\n b = ";
+    cin >> a.im;
+    cout << "Entrer a1 et b1 où a + ib est le deuxième complexe";
+    cout << "\n a1 = ";
+    cin >> b.reel;
+    cout << "\n b1 = ";
+    cin >> b.im;
+
+    Complexe c;
+    c.reel = a.reel + b.reel;
+    c.im = a.im + b.im;
+
+    cout << c.reel << "+" << c.im << "i";
+    return 0;
+}

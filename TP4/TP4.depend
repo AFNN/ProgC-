@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1506708605 source:c:\users\arnaud\desktop\github\progc-\tp4\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1506708793 c:\users\arnaud\desktop\github\progc-\tp4\fonctions.h
+	<string>
+
+1506355867 source:c:\users\arnaud\desktop\github\progc-\tp4\main.cpp
+	<iostream>
+	"fonctions.h"
+
