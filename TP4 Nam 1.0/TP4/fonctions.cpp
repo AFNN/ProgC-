@@ -16,6 +16,25 @@ Complexe::~Complexe(){
 
 }
 
+double Complexe::getReel(){
+            return reel;
+        }
+
+        //setter
+void Complexe::setReel(double r){
+            reel = r;
+}
+
+double Complexe::getIm(){
+        return im;
+}
+
+void Complexe::setIm(double i){
+            im = i;
+}
+
+
+
 Complexe addition(Complexe a, Complexe b){
     Complexe c(0.0,0.0);
     double c_reel = a.getReel() + b.getReel();

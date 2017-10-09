@@ -1,5 +1,6 @@
 #include <iostream>
 #include "fonctions.h"
+
 using namespace std;
 
 int main()
@@ -10,7 +11,7 @@ int main()
 
     //cout << res.reel << "+i" << res.im <<; //ERREUR car "reel" et "im" sont private
     cout << res.getReel() << "+i" << res.getIm() << endl;
-    res = addition(Complexe a, Complexe b) ;
+//    res = addition(Complexe a, Complexe b) ;
     cout << res.getReel() << "+i" << res.getIm()<< endl;
 
 }

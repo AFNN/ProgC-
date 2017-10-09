@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1507582212 source:c:\users\arnaud\desktop\efrei\prog\progc+\tp5\fonctions.cpp
+	"fonctions.h"
+	<iostream>
+	<cmath>
+
+1507581908 c:\users\arnaud\desktop\efrei\prog\progc+\tp5\fonctions.h
+
+1507582139 source:c:\users\arnaud\desktop\efrei\prog\progc+\tp5\main.cpp
+	<iostream>
+	"fonctions.h"
+

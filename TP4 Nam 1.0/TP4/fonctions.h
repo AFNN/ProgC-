@@ -9,23 +9,11 @@ class Complexe {
         double reel;
         double im;
     public :
-        //accesseur
-        double getReel(){
-            return reel;
-        }
-
-        //setter
-        void setReel(double r){
-            reel = r;
-        }
-
-        double getIm(){
-            return im;
-        }
-
-        void setIm(double i){
-            im = i;
-        }
+        double getReel();
+        void setReel(double);
+        double getIm();
+        void setIm(double);
+        Complexe getComplex(Complexe);
 
         Complexe(double reel=0.0 , double im=0.0);
 

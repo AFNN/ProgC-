@@ -15,7 +15,7 @@ Complexe::Complexe(double reel, double im)
 
 //Constructeur par recopie
 Complexe::Complexe(Complexe const& recopie) : _reel(recopie._reel), _im(recopie._im){
-    // Le constructeur par recopie est utilisé ) chaque copie d'objet
+    // Le constructeur par recopie est utilisé à chaque copie d'objet
     cout << "Construction de copie du complexe en cours ... \n" << endl;
 }
 
