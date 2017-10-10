@@ -18,3 +18,17 @@
 	<ostream>
 	<math.h>
 
+1507664209 source:c:\users\nam\workspace\prog c++\progc-\rendu tp4\tp4_p2\fonctions.cpp
+	<iostream>
+	<ostream>
+	"fonctions.h"
+	<math.h>
+
+1507663886 c:\users\nam\workspace\prog c++\progc-\rendu tp4\tp4_p2\fonctions.h
+	<iostream>
+
+1507663633 source:c:\users\nam\workspace\prog c++\progc-\rendu tp4\tp4_p2\main.cpp
+	<iostream>
+	<cmath>
+	"fonctions.h"
+

@@ -5,53 +5,49 @@
 
 using namespace std;
 
-
-
+//Constructeur
 Vector::Vector(int a, int b, int c) {
-    tableau = new int[3];
-    tableau[0] = a;
-    tableau[1] = b;
-    tableau[2] = c;
+    tab = new int[3];
+    tab[0] = a;
+    tab[1] = b;
+    tab[2] = c;
 }
 
+//Destructeur
 Vector::~Vector() {
-    delete [] tableau;
+    delete [] tab;
 }
 
 void Vector::instTableau(int v[]) {
     for (int i = 0; i<3; i++) {
-        v[i] = tableau[i];
+        v[i] = tab[i];
     }
 }
 
-void Vector::defTableau(int newTableau[]) {
+void Vector::defTableau(int tab2[]) {
     for (int i = 0; i<3; i++) {
-        tableau[i] = newTableau[i];
+        tab[i] = tab2[i];
     }
 }
+
+
+//Surcharge des opérateurs
 
 Vector operator+(Vector v1, Vector v2) {
-    Vector resultat;
 
-    // Création des pointeurs de résultat
-    int *newTableau = new int[3];
+    int *tab2 = new int[3];
     int *v1tab = new int[3];
     int *v2tab = new int[3];
+    Vector resultat;
 
-    // On récupère les vecteurs v1 et v2 pour les stocker localement
     v1.instTableau(v1tab);
     v2.instTableau(v2tab);
-
-    // On remplit le nouveau tableau local
     for (int i = 0; i<3; i++) {
-        newTableau[i] = v1tab[i] + v2tab[i];
+        tab2[i] = v1tab[i] + v2tab[i];
     }
+    resultat.defTableau(tab2);
 
-    // On insere le tableau local dans l'objet résultat
-    resultat.defTableau(newTableau);
-
-    // Suppression des éléments créés dynamiquement inutile hors de la fonction
-    delete [] newTableau;
+    delete [] tab2;
     delete [] v1tab;
     delete [] v2tab;
 
@@ -59,27 +55,19 @@ Vector operator+(Vector v1, Vector v2) {
 }
 
 Vector operator-(Vector v1, Vector v2) {
-    Vector resultat;
-
-    // Création des pointeurs de résultat
-    int *newTableau = new int[3];
+    int *tab2 = new int[3];
     int *v1tab = new int[3];
     int *v2tab = new int[3];
+    Vector resultat;
 
-    // On récupère les vecteurs v1 et v2 pour les stocker localement dans un vector
     v1.instTableau(v1tab);
     v2.instTableau(v2tab);
-
-    // On remplit le nouveau tableau local
     for (int i = 0; i<3; i++) {
-        newTableau[i] = v1tab[i] - v2tab[i];
+        tab2[i] = v1tab[i] - v2tab[i];
     }
+    resultat.defTableau(tab2);
 
-    // On insere le tableau local dans l'instance résultat
-    resultat.defTableau(newTableau);
-
-    // Suppression des éléments créés dynamiquement inutile hors de la fonction
-    delete [] newTableau;
+    delete [] tab2;
     delete [] v1tab;
     delete [] v2tab;
 
@@ -87,27 +75,20 @@ Vector operator-(Vector v1, Vector v2) {
 }
 
 Vector operator*(Vector v1, Vector v2) {
-    Vector resultat;
 
-    // Création des pointeurs de résultat
-    int *newTableau = new int[3];
+    int *tab2 = new int[3];
     int *v1tab = new int[3];
     int *v2tab = new int[3];
+    Vector resultat;
 
-    // On récupère les vecteurs v1 et v2 pour les stocker localement
     v1.instTableau(v1tab);
     v2.instTableau(v2tab);
-
-    // On remplit le nouveau tableau local
     for (int i = 0; i<3; i++) {
-        newTableau[i] = v1tab[i] * v2tab[i];
+        tab2[i] = v1tab[i] * v2tab[i];
     }
+    resultat.defTableau(tab2);
 
-    // On injecte le tableau local dans l'instance résultat
-    resultat.defTableau(newTableau);
-
-    // Suppression des éléments créés dynamiquement
-    delete [] newTableau;
+    delete [] tab2;
     delete [] v1tab;
     delete [] v2tab;
 
@@ -116,22 +97,22 @@ Vector operator*(Vector v1, Vector v2) {
 
 Vector& Vector::operator= (const Vector& v) {
     if (&v != this) {
-        tableau[0] = v.tableau[0];
-        tableau[1] = v.tableau[1];
-        tableau[2] = v.tableau[2];
+        tab[0] = v.tab[0];
+        tab[1] = v.tab[1];
+        tab[2] = v.tab[2];
     }
     return *this;
 }
 
 ostream& operator<<(ostream& os, const Vector& v1) {
-    os << v1.tableau[0] << " " << v1.tableau[1] << " " << v1.tableau[2] << endl;
+    os << v1.tab[0] << " " << v1.tab[1] << " " << v1.tab[2] << endl;
 
     return os;
 }
 
 istream& operator>>(istream& is, Vector& v1) {
     cout << "Rentrez les 3 composantes du vecteur" << endl;
-    is >> v1.tableau[0] >> v1.tableau[1] >> v1.tableau[2];
+    is >> v1.tab[0] >> v1.tab[1] >> v1.tab[2];
 
     return is;
 }

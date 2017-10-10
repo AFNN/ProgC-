@@ -9,11 +9,12 @@ int main()
     Y e;
     e.affichage();
 
-    Y f = e; // Le constructeur de copie est utilisé pour créer f a partir de e
+    // Création de f par recopie de e
+    Y f = e;
     e.affichage();
     f.affichage();
-
-    e.setValue(); // Modification du tableau de l'objet f: tableau[Y] passe de i+1
+    // Modification de l'objet f: tableau[Y] passe de i+1
+    e.setValue();
     cout << "PARTIE affichage tableau f apres modif du tableau e"<<endl;
     f.affichage(); //On voit bien une modification sur l'objet f
     cout << "PARTIE affichage tableau f apres modif du tableau e"<<endl;
