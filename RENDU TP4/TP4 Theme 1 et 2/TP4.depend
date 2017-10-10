@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1506708605 source:c:\users\arnaud\desktop\github\progc-\tp4\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1506708793 c:\users\arnaud\desktop\github\progc-\tp4\fonctions.h
+	<string>
+
+1506355867 source:c:\users\arnaud\desktop\github\progc-\tp4\main.cpp
+	<iostream>
+	"fonctions.h"
+
+1507487983 source:c:\users\nam\workspace\progc-\tp4\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+	<math.h>
+	"X.h"
+
+1507487874 c:\users\nam\workspace\progc-\tp4\fonctions.h
+
+1507481187 source:c:\users\nam\workspace\progc-\tp4\main.cpp
+	<iostream>
+	<cmath>
+	"fonctions.h"
+
+1507478970 c:\users\nam\workspace\progc-\tp4\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
+1507488482 c:\users\nam\workspace\progc-\tp4\x.h
+
+1507532839 source:c:\users\arnaud\desktop\github\progc-\rendu tp4\tp4 theme 1 et 2\main.cpp
+	<iostream>
+	<cmath>
+	"fonctions.h"
+	"X.h"
+
+1507532839 c:\users\arnaud\desktop\github\progc-\rendu tp4\tp4 theme 1 et 2\fonctions.h
+
+1507532839 c:\users\arnaud\desktop\github\progc-\rendu tp4\tp4 theme 1 et 2\x.h
+
+1507543150 source:c:\users\arnaud\desktop\github\progc-\rendu tp4\tp4 theme 1 et 2\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+	<math.h>
+	"X.h"
+

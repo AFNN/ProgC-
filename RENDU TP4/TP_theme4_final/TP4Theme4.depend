@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1507651939 source:c:\users\namko\workspace\c - c++\tp4theme4\fonctions.cpp
+	<iostream>
+	<ostream>
+	"complexe.h"
+	<math.h>
+
+1507652071 c:\users\namko\workspace\c - c++\tp4theme4\complexe.h
+	<iostream>
+
+1507652037 source:c:\users\namko\workspace\c - c++\tp4theme4\main.cpp
+	<iostream>
+	<cmath>
+	"complexe.h"
+	"vector.h"
+
+1507651562 c:\users\namko\workspace\c - c++\tp4theme4\vector.h
+	<iostream>
+
