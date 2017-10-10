@@ -24,7 +24,7 @@ class Sess {
         Sess();
         ~Sess();//destructeur
         int nombreInstance();
-        int instance;
+
 };
 class U{
     public:
