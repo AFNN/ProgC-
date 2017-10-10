@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1507640594 source:c:\users\arnaud\desktop\efrei\prog\progc+\tp4_theme5\main.cpp
+	"fonctions.cpp"
+	<iostream>
+
+1507640527 c:\users\arnaud\desktop\efrei\prog\progc+\tp4_theme5\fonctions.h
+
+1507641450 c:\users\arnaud\desktop\efrei\prog\progc+\tp4_theme5\fonctions.cpp
+	<iostream>
+	"fonctions.h"
+
