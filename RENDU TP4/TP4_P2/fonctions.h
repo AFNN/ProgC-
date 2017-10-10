@@ -1,7 +1,6 @@
-#ifndef VECTOR_H_INCLUDED
-#define VECTOR_H_INCLUDED
+#ifndef COMPLEXE_H_INCLUDED
+#define COMPLEXE_H_INCLUDED
 #include <iostream>
-
 
 class Vector {
     int *tableau;
@@ -14,6 +13,10 @@ class Vector {
         friend std::istream& operator>>(std::istream& is, Vector& v1);
         friend std::ostream& operator<<(std::ostream& os, const Vector& v1);
         Vector& operator= (const Vector& v);
+        friend Vector operator+(Vector v1, Vector v2);
+        friend Vector operator-(Vector v1, Vector v2);
+        friend Vector operator*(Vector v1, Vector v2);
+        friend Vector operator/(Vector v1, Vector v2);
 };
 
-#endif // VECTOR_H_INCLUDED
+#endif // COMPLEXE_H_INCLUDED

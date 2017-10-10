@@ -17,3 +17,20 @@
 1507651562 c:\users\namko\workspace\c - c++\tp4theme4\vector.h
 	<iostream>
 
+1507652981 source:c:\users\arnaud\desktop\github\progc-\rendu tp4\tp_theme4_final\main.cpp
+	<iostream>
+	<cmath>
+	"complexe.h"
+
+1507652472 c:\users\arnaud\desktop\github\progc-\rendu tp4\tp_theme4_final\complexe.h
+	<iostream>
+
+1507652472 c:\users\arnaud\desktop\github\progc-\rendu tp4\tp_theme4_final\vector.h
+	<iostream>
+
+1507652472 source:c:\users\arnaud\desktop\github\progc-\rendu tp4\tp_theme4_final\fonctions.cpp
+	<iostream>
+	<ostream>
+	"complexe.h"
+	<math.h>
+

@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1507653300 source:c:\users\arnaud\desktop\efrei\prog\progc+\tp4_p2\fonctions.cpp
+	<iostream>
+	<ostream>
+	"fonctions.h"
+	<math.h>
+
+1507653393 c:\users\arnaud\desktop\efrei\prog\progc+\tp4_p2\fonctions.h
+	<iostream>
+
+1507653449 source:c:\users\arnaud\desktop\efrei\prog\progc+\tp4_p2\main.cpp
+	<iostream>
+	<cmath>
+	"fonctions.h"
+
+1507653285 c:\users\arnaud\desktop\efrei\prog\progc+\tp4_p2\fonctions.cpp
+	<iostream>
+	<ostream>
+	<math.h>
+
